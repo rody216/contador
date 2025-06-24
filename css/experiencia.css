@@ -1,0 +1,71 @@
+ /* Experiencia */
+        .experience {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .experience-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .credentials {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .credential-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .credential-item i {
+            font-size: 2.5rem;
+            color: #3498db;
+        }
+
+        .credential-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .credential-item p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }

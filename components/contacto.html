@@ -1,0 +1,76 @@
+<!-- Contacto -->
+<section id="contacto" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Teléfono</strong>
+            <p>+57 310 3704356</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong>
+            <p>eveliobustos@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Oficina</strong>
+            <p>Calle 138 No. 55-38, Oficina Finanzas<br>Bogotá, Colombia</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Horarios de Atención</strong>
+            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Solicitar Consulta</h3>
+
+        <form action="https://formsubmit.co/rody216@gmail.com" method="POST" id="contactForm">
+          <!-- REDIRECCIÓN Y CONFIGURACIÓN -->
+          <input type="hidden" name="_next" value="https://tusitio.com/index.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+
+          <div class="form-group">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+          </div>
+          <div class="form-group">
+            <select id="servicio" name="servicio" required>
+              <option value="">Seleccione un servicio</option>
+              <option value="contabilidad">Contabilidad General</option>
+              <option value="tributaria">Declaraciones Tributarias</option>
+              <option value="constitucion">Constitución de Empresas</option>
+              <option value="asesoria">Asesoría Fiscal</option>
+              <option value="nomina">Nómina y Seguridad Social</option>
+              <option value="auditoria">Auditoría y Revisión</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="mensaje" name="mensaje" placeholder="Descripción de su consulta" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
