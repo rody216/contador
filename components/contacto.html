@@ -38,37 +38,42 @@
       <div class="contact-form">
         <h3>Solicitar Consulta</h3>
 
-        <form action="https://formsubmit.co/rody216@gmail.com" method="POST" id="contactForm">
-          <!-- REDIRECCIÓN Y CONFIGURACIÓN -->
-          <input type="hidden" name="_next" value="https://rody216.github.io/contador/gracias.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="box" />
+        <form action="https://formsubmit.co/bbf2a3ab8fc07d99d480fa8fe20b6cfa" method="POST">
+  <!-- Personalización y control -->
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio de Evelio Bustos">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_replyto" value="{{email}}">
+  <input type="hidden" name="_next" value="https://rody216.github.io/contador/components/gracias.html">
+  <input type="hidden" name="Enviado_desde" value="Sitio Web Oficial de Evelio Bustos">
 
-          <div class="form-group">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-          </div>
-          <div class="form-group">
-            <select id="servicio" name="servicio" required>
-              <option value="">Seleccione un servicio</option>
-              <option value="contabilidad">Contabilidad General</option>
-              <option value="tributaria">Declaraciones Tributarias</option>
-              <option value="constitucion">Constitución de Empresas</option>
-              <option value="asesoria">Asesoría Fiscal</option>
-              <option value="nomina">Nómina y Seguridad Social</option>
-              <option value="auditoria">Auditoría y Revisión</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea id="mensaje" name="mensaje" placeholder="Descripción de su consulta" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-        </form>
+  <!-- Campos visibles -->
+  <div class="form-group">
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+  </div>
+  <div class="form-group">
+    <input type="tel" name="telefono" placeholder="Teléfono">
+  </div>
+  <div class="form-group">
+    <select name="servicio" required>
+      <option value="">Seleccione un servicio</option>
+      <option value="contabilidad">Contabilidad General</option>
+      <option value="tributaria">Declaraciones Tributarias</option>
+      <option value="constitucion">Constitución de Empresas</option>
+      <option value="asesoria">Asesoría Fiscal</option>
+      <option value="nomina">Nómina y Seguridad Social</option>
+      <option value="auditoria">Auditoría y Revisión</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <textarea name="mensaje" placeholder="Descripción de su consulta" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+</form>
+
       </div>
     </div>
   </div>

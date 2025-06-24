@@ -43,3 +43,48 @@ body {
 .btn-volver:hover {
   background-color: #e0e0e0;
 }
+
+.hero-gracias {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  padding: 120px 2rem;
+  text-align: center;
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracias-container {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gracias-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gracias-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #ecf0f1;
+}
