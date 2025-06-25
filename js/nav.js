@@ -24,14 +24,13 @@ export function initNavEvents() {
   const updateNavbarStyle = () => {
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
-      logoImg.src = 'img/6w.png';
+      logoImg.src = '/contador/img/6w.png'; // logo oscuro
     } else {
       navbar.classList.remove('scrolled');
-      logoImg.src = 'img/5b.png';
+      logoImg.src = '/contador/img/5b.png'; // logo claro
     }
   };
 
   window.addEventListener('scroll', updateNavbarStyle);
-  updateNavbarStyle(); // Aplicar al cargar
+  updateNavbarStyle(); // Al cargar
 }
-
