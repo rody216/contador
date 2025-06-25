@@ -9,15 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cargar FOOTER desde components/
   fetch("../components/footer.html")
-    .then(res => res.text())
-    .then(data => {
-      document.querySelector("footer").innerHTML = data;
-      const yearSpan = document.getElementById("currentYear");
-      if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-      }
-    });
-});
+  .then(res => res.text())
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+
+    // Cargar el CSS del footer dinámicamente
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "../css/footer.css";
+    document.head.appendChild(css);
+
+    // Actualizar año automáticamente
+    const yearSpan = document.querySelector(".footer-bottom p");
+    if (yearSpan) {
+      yearSpan.innerHTML = `&copy; ${new Date().getFullYear()} Evelio Bustos - Contador Público Certificado. Todos los derechos reservados.`;
+    }
+  });
 
 // ✅ Solo una definición limpia
 function loadNavScript() {
